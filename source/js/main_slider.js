@@ -3,7 +3,7 @@ $(document).ready(function(){
      loop:true,
      margin:10,
      nav:true,
-     autoplay:false,
+     autoplay:true,
      autoplaySpeed:1000,
      responsive:{
          0:{
@@ -19,6 +19,25 @@ $(document).ready(function(){
    })
 
    $('.slide-two').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:false,
+    autoplaySpeed:3000,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:3
+        },
+        1200:{
+            items:3
+        }
+    }
+  })
+
+  $('.slide-third').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
