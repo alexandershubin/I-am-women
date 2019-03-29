@@ -36,6 +36,7 @@ gulp.task("js", function() {
     .pipe(gulp.dest("build/js"))
     .pipe(uglify())
     .pipe(rename("app.min.js"))
+    .pipe(rename("main_slider.min.js"))
     .pipe(gulp.dest("build/js"));
 });
 gulp.task("html", function() {
