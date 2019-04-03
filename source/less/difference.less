@@ -15,10 +15,10 @@
 
 .difference__discription {
   width: 280px;
-  height: 377px;
   color: #342b2b;
   font-size: 16px;
   margin: 0 auto;
+  padding-bottom: 25px;
 }
 
 .difference__background {
@@ -31,11 +31,24 @@
   overflow: hidden;
 }
 
+.difference__overlay.overlay {
+  display: none;
+}
+
+.difference__shadow.overlay {
+  display: none;
+}
+
 .difference__second {
   display: none;
 }
 
 @media (min-width: @tablet-width) {
+  .difference h3 {
+    width: 140px;
+    font-size: 36px;
+  }
+
   .difference__content {
     display: flex;
     justify-content: space-around;
@@ -50,12 +63,41 @@
     left: 0;
   }
 
-  .difference-second__discription {
+  .difference__discription--first {
+    width: 420px;
     position: absolute;
-    top: 80px;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 75px;
+    left: 65px;
+    text-align: left;
+    z-index: 1;
+  }
+
+  .difference__discription--second {
+    width: 420px;
+    position: absolute;
+    top: 143px;
+    left: 65px;
+    text-align: left;
+    z-index: 1;
+  }
+
+  .difference__discription--third {
+    position: absolute;
+    top: 680px;
+    left: -270px;
+    width: 400px;
+    text-align: left;
+    z-index: 1;
+  }
+
+  .difference__overlay.overlay {
+    display: block;
+    top: 50px;
+    left: 50px;
+    width: 457px;
+    height: 202px;
+    background-color: #ece5e1;
+    opacity: 0.8;
   }
 
   .difference__background {
@@ -71,5 +113,15 @@
 
   .difference__backgstage {
     margin-top: 360px;
+  }
+
+  .difference__shadow.overlay {
+    display: block;
+    top: 640px;
+    left: -228px;
+    width: 457px;
+    height: 202px;
+    background-color: #ece5e1;
+    opacity: 0.8;
   }
 }

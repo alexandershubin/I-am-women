@@ -38,7 +38,7 @@
   padding-bottom: 13px;
 }
 
-.blog-discription__second {
+.blog__second {
   width: 240px;
   margin: 0 auto;
   color: #342b2b;
@@ -81,7 +81,6 @@
 .slide-third .owl-dots .owl-dot {
   display: inline-block;
   zoom: 1;
-  *display: inline;
 }
 
 .slide-third .owl-dots .owl-dot span {
@@ -89,7 +88,6 @@
   height: 3px;
   background: #d6d6d6;
   display: block;
-  -webkit-backface-visibility: visible;
   transition: opacity 200ms ease;
 }
 
@@ -104,4 +102,67 @@
 
 .slide-third .owl-nav button.owl-next {
   display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .blog {
+    padding-bottom: 110px;
+  }
+
+  .blog h3 {
+    font-size: 48px;
+    padding-bottom: 60px;
+  }
+
+  .blog__picture a {
+    font-size: 16px;
+    padding-right: 280px;
+  }
+
+  .blog__picture--first a {
+    padding-right: 260px;
+  }
+
+  .blog-discription__first {
+    font-size: 24px;
+  }
+
+  .blog__second {
+    padding-bottom: 70px;
+  }
+
+  .blog__second--property {
+    width: 295px;
+  }
+
+  .blog__second--office {
+    width: 310px;
+  }
+
+  .blog__second--suits {
+    width: 340px;
+  }
+
+  .blog__second--ultraviolet {
+    width: 360px;
+  }
+
+  .slide-third .owl-dots {
+    top: -62px;
+    right: 0;
+    text-align: right;
+  }
+
+  .slide-third .owl-dots .owl-dot span {
+    width: 110px;
+  }
+
+  .slide-third .owl-dots .owl-dot.active span {
+    width: 78px;
+    background: #342b2b;
+  }
+
+  .blog-discription__third {
+    display: none;
+  }
 }
